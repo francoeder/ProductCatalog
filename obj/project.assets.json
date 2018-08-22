@@ -11507,11 +11507,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\ederhf\\Desktop\\Estudos\\DotNetCore\\ProductCatalog\\ProductCatalog.csproj",
+      "projectUniqueName": "c:\\Users\\ederhf\\Desktop\\Estudos\\DotNetCore\\balta.io\\ProductCatalog\\ProductCatalog.csproj",
       "projectName": "ProductCatalog",
-      "projectPath": "c:\\Users\\ederhf\\Desktop\\Estudos\\DotNetCore\\ProductCatalog\\ProductCatalog.csproj",
+      "projectPath": "c:\\Users\\ederhf\\Desktop\\Estudos\\DotNetCore\\balta.io\\ProductCatalog\\ProductCatalog.csproj",
       "packagesPath": "C:\\Users\\ederhf\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\ederhf\\Desktop\\Estudos\\DotNetCore\\ProductCatalog\\obj\\",
+      "outputPath": "c:\\Users\\ederhf\\Desktop\\Estudos\\DotNetCore\\balta.io\\ProductCatalog\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
