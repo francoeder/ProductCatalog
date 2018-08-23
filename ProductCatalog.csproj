@@ -6,11 +6,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <DotNetCliTooReference Include="Microsoft.EntityFrameworkCore.Tools.Dotnet" Version="2.0.1"/>
+    <DotNetCliTooReference Include="Microsoft.EntityFrameworkCore.Tools.Dotnet" Version="2.0.1" />
   </ItemGroup>
 
 </Project>
