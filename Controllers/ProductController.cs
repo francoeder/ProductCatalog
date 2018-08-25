@@ -50,17 +50,17 @@ namespace ProductCatalog.Controllers
         [HttpPost]
         public ResultViewModel Post([FromBody] EditorProductViewModel model)
         {
-            // model.Validate();
+            model.Validate();
             
-            // if (model.Invalid)
-            // {
-            //     return new ResultViewModel
-            //     {
-            //         Success = false,
-            //         Message = "",
-            //         Data = model.Notifications
-            //     };
-            // }
+            if (model.Invalid)
+            {
+                return new ResultViewModel
+                {
+                    Success = false,
+                    Message = "Não foi possível cadastrar o produto",
+                    Data = model.Notifications
+                };
+            }
 
             var product = new Product();
             product.Title = model.Title;
@@ -87,17 +87,17 @@ namespace ProductCatalog.Controllers
         [HttpPut]
         public ResultViewModel Put([FromBody] EditorProductViewModel model)
         {
-            // model.Validate();
+            model.Validate();
             
-            // if (model.Invalid)
-            // {
-            //     return new ResultViewModel
-            //     {
-            //         Success = false,
-            //         Message = "",
-            //         Data = model.Notifications
-            //     };
-            // }
+            if (model.Invalid)
+            {
+                return new ResultViewModel
+                {
+                    Success = false,
+                    Message = "Não foi possível alterar o produto",
+                    Data = model.Notifications
+                };
+            }
 
             var product = _context.Products.Find(model.Id);
             product.Title = model.Title;
