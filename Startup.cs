@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using ProductCatalog.Data;
 using ProductCatalog.Repositories;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace ProductCatalog
 {
@@ -18,9 +19,13 @@ namespace ProductCatalog
             services.AddMvc();
 
             services.AddResponseCompression();
-
             services.AddScoped<StoreDataContext, StoreDataContext>();
             services.AddTransient<ProductRepository, ProductRepository>();
+
+            services.AddSwaggerGen(x => 
+            {
+                x.SwaggerDoc("v1", new Info { Title = "Catálogo de Produtos", Version = "v1" });
+            });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -32,6 +37,11 @@ namespace ProductCatalog
             
             app.UseMvc();
             app.UseResponseCompression();
+            app.UseSwagger();
+            app.UseSwaggerUI(x => 
+            {
+                x.SwaggerEndpoint("/swagger/v1/swagger.json", "Catálogo de Produtos");
+            });
         }
     }
 }
