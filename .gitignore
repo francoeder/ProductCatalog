@@ -1,11 +1,4 @@
-obj/ProductCatalog.csproj.nuget.g.targets
-obj/ProductCatalog.csproj.nuget.g.props
-obj/ProductCatalog.csproj.nuget.cache
-obj/project.assets.json
-obj/Debug/netcoreapp2.1/ProductCatalog.csproj.CoreCompileInputs.cache
-.gitignore
-obj/Debug/netcoreapp2.1/ProductCatalog.csprojResolveAssemblyReference.cache
-obj/Debug/netcoreapp2.1/ProductCatalog.assets.cache
 obj/
 bin/
 Migrations/
+.vscode/settings.json
